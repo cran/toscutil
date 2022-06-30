@@ -2,21 +2,27 @@
 % Please edit documentation in R/cat2.R
 \name{cat2}
 \alias{cat2}
-\alias{catn}
 \alias{cat0}
+\alias{catn}
 \alias{cat0n}
+\alias{catsn}
+\alias{catnn}
 \title{Concatenate and Print}
 \usage{
-cat2(..., sep, end)
+cat2(..., sep = " ", end = "\\n")
 
 cat0(..., sep = "", end = "")
 
 catn(..., sep = " ", end = "\\n")
 
 cat0n(..., sep = "", end = "\\n")
+
+catsn(..., sep = " ", end = "\\n")
+
+catnn(..., sep = "\\n", end = "\\n")
 }
 \arguments{
-\item{...}{objects passed on to \code{cat}}
+\item{...}{objects passed on to \link[base]{cat}}
 
 \item{sep}{a character vector of strings to append after each element}
 
@@ -27,10 +33,16 @@ No return value, called for side effects
 }
 \description{
 Same as \code{cat} but with an additional argument \code{end},
-which gets printed after all other elements.
+which gets printed after all other elements. Inspired by pythons \code{print}
+command.
+
+\strong{Deprecation note}: all cat aliases, i.e., everything except cat2 are
+deprecated and should not be used any more!
 }
 \examples{
 cat0("hello", "world") # prints "helloworld" (without newline)
 catn("hello", "world") # prints "hello world\n"
 cat0n("hello", "world") # prints "helloworld\n"
+catsn("hello", "world") # prints "hello world\n"
+catnn("hello", "world") # prints "hello\nworld\n"
 }
