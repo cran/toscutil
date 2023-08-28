@@ -1,6 +1,6 @@
 Package: toscutil
 Title: Utility Functions
-Version: 2.5.0
+Version: 2.7.3
 Authors@R: 
     person(given = "Tobias",
            family = "Schmidt",
@@ -12,13 +12,14 @@ Description: Base R sometimes requires verbose statements for simple,
     shorthands for such tasks.
 License: MIT + file LICENSE
 Encoding: UTF-8
-RoxygenNote: 7.2.0
-Imports: methods, utils, rlang
-Suggests: testthat (>= 3.0.0)
+RoxygenNote: 7.2.3
+Imports: utils, rlang, tools, languageserver
+Suggests: testthat (>= 3.0.0),
 Config/testthat/edition: 3
+URL: https://toscm.github.io/toscutil/
 NeedsCompilation: no
-Packaged: 2022-06-30 08:35:55 UTC; tobi
+Packaged: 2023-08-28 06:35:15 UTC; tobi
 Author: Tobias Schmidt [aut, cre]
 Maintainer: Tobias Schmidt <tobias.schmidt331@gmail.com>
 Repository: CRAN
-Date/Publication: 2022-06-30 10:10:02 UTC
+Date/Publication: 2023-08-28 07:20:02 UTC
